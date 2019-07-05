@@ -70,4 +70,85 @@ ul.call-to-action li {
     background-color: #fff;
     flex: 1 1 384px;
     max-width: 768px;
+    position: relative;
+}
+h3 {
+    font-size: 1.1em !important;
+    font-family: 'Bitter', sans-serif !important;
+    font-weight: normal !important;
+}
+a #expand-supplemental {
+    align: right !important;
+}
+#wteg-image-wrapper {
+    position: relative;
+    margin-bottom: 20px;
+}
+#wteg-image-wrapper .overlay {
+    position: absolute;
+    background: rgba(0, 0, 0, 0.5);
+    left: 0;
+    top: 0;
+    width: 80%;
+    height: 68%;
+    display: flex;
+    padding: 10%;
+    justify-content:center;
+    align-content:center;
+    text-align: center;
+    flex-direction:column; /* column | row */
+}
+.overlay button {
+    color: #fff;
+    font-size: 1.05em;
+    display: inline;
+    border: 1px solid #fff;
+    padding: 40px;
+}
+.overlay button:hover {
+    background: rgba(255, 255, 255, 0.1);
+}
+.record-utilities {
+    border-bottom: 0;
+    margin: 0;
+    background-color: #333;
+    padding: 0;
+    font-size: 0.85em;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+}
+.record-utilities li  {
+    display: inline-block;
+    width: 32.5%;
+    text-align: center;
+    border-right: 3px solid #fff;
+}
+.record-utilities li:last-child {
+    border: 0;
+}
+.record-utilities button {
+    color: #fff;
+    padding: 8px;
+}
+.record-utilities button:hover {
+    text-decoration: underline;
+}
+.asset-details tr   {
+    border-top: 1px solid #e5e5e5 !important;
+    border-bottom: 1px solid #e5e5e5 !important;
+}
+.asset-details tr:first-child  {
+    border-top: 0 !important;
+}
+.asset-details tr:last-child {
+    border-bottom: 0 !important;
+  }
+.asset-details tr td, .asset-details tr th {
+    padding: 1.2em 1em;
+    vertical-align: top;
+}
+.asset-details {
+    margin-top: 0 !important;
+    margin-bottom: 1em !important;
 }
