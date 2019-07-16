@@ -1,8 +1,8 @@
 
 h1 {
     color: #222;
-    font-size: 1.7em;
-    text-align: center;
+    font-size: 1.4em;
+    text-align: left;
     margin-top: 1.3em;
     margin-bottom: 0.3em;
 }
@@ -15,7 +15,7 @@ h2 {
     color: #222;
     font-family: 'Bitter', sans-serif !important;
     font-weight: normal !important;
-    font-size: 1.3em !important;
+    font-size: 1.1em !important;
     margin-bottom: 20px !important;
 }
 .section-heading {
@@ -23,6 +23,7 @@ h2 {
     font-size: 0.6em;
     margin-bottom: 0.5em;
     font-family: 'Open Sans', sans-serif;
+    margin-left: 0;
 }
 .divider {
     color: #ccc;
@@ -39,6 +40,7 @@ ul.call-to-action li {
     display: inline-block;
     padding: 0.5em 1em;
     margin-right: 1em;
+    margin-bottom: 1em;
     background-color: #099;
     color: #fff;
 }
@@ -110,14 +112,13 @@ a #expand-supplemental {
 }
 .record-utilities {
     border-top: 1px solid #ccc;
-    border-bottom: 1px solid #ccc;
     margin: 0;
-    background-color: #fff;
     padding: 0;
     font-size: 0.9em;
     position: absolute;
     width: 100%;
     bottom: 0;
+    background-color: #6a6666;
 }
 .record-utilities li  {
     display: inline-block;
@@ -129,7 +130,7 @@ a #expand-supplemental {
     border: 0;
 }
 .record-utilities button {
-    color: #999;
+    color: #fff;
     padding: 8px;
 }
 .record-utilities button:hover {
@@ -152,4 +153,78 @@ a #expand-supplemental {
 .asset-details {
     margin-top: 0 !important;
     margin-bottom: 1em !important;
+}
+#summary p {
+    text-align: left;
+}
+.clickToggle {
+    display: inline-block;
+    width: 100% !important;
+    background-color: #ccc !important;
+    margin: 0 !important;
+}
+.clickToggle:before {
+    content: "Matt";
+    color: #fff;
+    font-size: 0.7em;
+    padding: 1em;
+}
+@media only screen and (min-width:768px) {
+    h1 {
+        font-size: 1.7em;
+        text-align: center;
+    }
+    h2 {
+        font-size: 1.3em !important;
+    }
+    ul.call-to-action li {
+        margin-bottom: 0;
+    }
+    #summary p {
+        text-align: center;
+    }
+    .sticky {
+        position: fixed;
+        top: 0;
+        z-index: 100;
+        background: rgba(236, 236, 236, 0.9);
+        width: 100vw;
+        margin-left: -50vw;
+        left: 50%;
+        margin-bottom: 200px;
+        animation: slide-down 0.3s;
+    }
+
+    .sticky h1 {
+        font-size: 1.2em;
+        margin: 0.7em;
+    }
+
+    .sticky .container-action {
+        border: 0;
+        border-top: 1px dotted #999;
+    }
+
+    .sticky .container-action ul {
+        margin: 0.3em;
+    }
+
+    .sticky .container-action li {
+        font-size: 0.85em;
+    }
+
+    .sticky .hidden {
+        display: none;
+    }
+
+    @keyframes slide-down {
+        0% {
+            opacity: 0;
+            transform: translateY(-100%);
+        }
+        100% {
+            opacity: 0.9;
+            transform: translateY(0);
+        }
+    }
 }
