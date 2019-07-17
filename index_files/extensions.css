@@ -42,6 +42,8 @@ ul.call-to-action li {
     margin-right: 1em;
     margin-bottom: 1em;
     background-color: #099;
+}
+ul.call-to-action li a {
     color: #fff;
 }
 .container-action {
