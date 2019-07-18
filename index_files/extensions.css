@@ -113,26 +113,21 @@ a #expand-supplemental {
     background: rgba(255, 255, 255, 0.1);
 }
 .record-utilities {
-    border-top: 1px solid #ccc;
     margin: 0;
     padding: 0;
     font-size: 0.9em;
-    position: absolute;
-    width: 100%;
-    bottom: 0;
-    background-color: #6a6666;
+    text-align: center;
 }
 .record-utilities li  {
     display: inline-block;
     width: 32.5%;
     text-align: center;
-    border-right: 1px solid #ccc;
+    border: 1px solid #ccc;
 }
-.record-utilities li:last-child {
-    border: 0;
-}
-.record-utilities button {
-    color: #fff;
+
+.record-utilities li a {
+    display: inline-block;
+    color: #666;
     padding: 8px;
 }
 .record-utilities button:hover {
@@ -170,6 +165,32 @@ a #expand-supplemental {
     color: #fff;
     font-size: 0.7em;
     padding: 1em;
+}
+.tag, div[class*=-tag-list-item] {
+    border: 0;
+    padding: 5px 0;
+}
+.tag, div[class*=-tag-list-item] a {
+    color: #2a5db0;
+}
+.general-tag-list-item, .users-tag-list-item {
+    border: 0;
+}
+div[class*=-tag-list-item] span>span {
+    border: 0;
+}
+div.general-tag-list-item span.flagTag {
+    padding-left: 4px;
+    padding-right: 10px;
+}
+div.general-tag-list-item span.flagTag a {
+    background: url(flag.png) bottom center no-repeat;
+}
+#user-contributions {
+    margin: 2em 0;
+}
+.details-row #hierarchy {
+    padding: 0;
 }
 @media only screen and (min-width:768px) {
     h1 {
