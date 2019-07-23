@@ -1,25 +1,17 @@
 
-<?php require "head.php"; ?>
-<?php require "masthead.php" ?>
+<?php require "includes/head.php"; ?>
+<?php require "includes/masthead.php"; ?>
 
 <div id="page_wrap" class="container" role="main">
 
+    <!-- TITLE/REF/DATE and ACCESS OPTIONS -->
     <section class="row">
         <div class="col starts-at-full clr">
-            <div id="summary">
-                <h1><span class="section-heading hidden">You are viewing a catalogue description of:</span>Headquarters Tank Corps: Headquarters Tank Corps</h1>
-                <span class="hidden"><p>Date: 1918 Oct <span class="divider">|</span> Ref: WO 95/95/3</p></span>
-                <div class="container-action">
-                    <ul class="call-to-action"><li><a href="https://discovery.nationalarchives.gov.uk/details/download?iaid=154c9e92053e46eaa8cf3096b40c8d8e&amp;reference=WO%2095%2F95%2F3&amp;token=636969740484252417&amp;batchId=wo95&amp;edocId=0" data-webtrends-call="downloadFullRecord">Download (£3.50)</a></li><li><a href="">View at Kew (free)</a></li></ul>
-                    <input type="hidden" id="deliveryoption" value="DigitizedDiscovery">
-                    <input type="hidden" id="readertype" value="OnSitePublic">
-                </div>
-            </div>
-            <div class="container-details">
-                <p>Download information: </span> Size - 82 MB <span class="divider"> | </span> Format - PDF</p>
-            </div>
-        </div>
-    </section>
+
+            <?php require "includes/delivery-options.php"; ?>
+
+        </div><!-- end col -->
+    </section><!-- end row -->
 
     <!-- HIERARCHY -->
     <section class="row">
@@ -29,8 +21,7 @@
                     <div id="hierarchy">
                         <nav>
                             <h2>Where is this in the catalogue?</h2>
-                            <a href="https://discovery.nationalarchives.gov.uk/browse">The National Archives'
-                                catalogue</a>
+                            <a href="https://discovery.nationalarchives.gov.uk/browse">The National Archives' catalogue</a>
                             <ul>
                                 <li><span class="divider">-</span> <a href="https://discovery.nationalarchives.gov.uk/browse/r/h/C259">WO - Records created or inherited by the War Office, Armed Forces, Judge Advocate General, and related bodies</a></li>
                                 <li><span class="divider">--</span> <a href="https://discovery.nationalarchives.gov.uk/browse/r/h/C540">Division within WO - Records of the Armed Forces from commands, headquarters, regiments and corps</a></li>
@@ -42,11 +33,11 @@
                             </ul>
                         </nav>
                         <button type="button" class="clickToggle" name="toggle-hierarchy"></button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+                    </div><!-- end hierarchy -->
+                </div><!-- end details-breather -->
+            </div><!-- end holding-box -->
+        </div><!-- end details-row -->
+    </section><!-- end row -->
 
     <main class="row flexible">
 
@@ -103,6 +94,7 @@
                     </tr>
                     </tbody>
                 </table>
+
                 <div id="user-contributions">
                     <h3 class="inline" id="flagTagList_label">User tags</h3>
                     <ul id="tag-list" aria-labelledby="flagTagList_label">
@@ -208,15 +200,18 @@
                         </li>
                     </ul>
                 </div>
+
+                <?php require "includes/tag-removal.php"; ?>
+
                 <ul class="record-utilities">
-                    <li><a href="">Add a tag</a></li>
-                    <li><a href="https://discovery.nationalarchives.gov.uk/details/r/154c9e92053e46eaa8cf3096b40c8d8e#" id="show-suggestion-form" aria-expanded="false" aria-controls="suggest-a-correction-form">Report an error</a></li>
-                    <li><a>Give us feedback</a></li>
+                    <li><a id="show-tag-form" href="">Add a tag</a></li>
+                    <li><a id="show-suggestion-form" href="https://discovery.nationalarchives.gov.uk/details/r/154c9e92053e46eaa8cf3096b40c8d8e#" aria-expanded="false" aria-controls="suggest-a-correction-form">Report an error</a></li>
+                    <li><a id="show-feedback-form" href="">Give us feedback</a></li>
                 </ul>
 
-                <?php require "error.php" ?>
-                <?php require "tag.php" ?>
-                <?php require "feedback.php" ?>
+                <?php require "includes/error.php"; ?>
+                <?php require "includes/tag.php"; ?>
+                <?php require "includes/feedback.php"; ?>
             </div>
         </div>
 
@@ -231,8 +226,8 @@
                         <p>No two records are the same, so please keep in mind that the records in this series will contain varying levels of detail, cover different time periods, and might not always be easy to read.</p>
                         <p>This short guide gives you an idea of what to expect from a typical record, and shows you an example of what one might look like. We can’t guarantee you will unearth what you are looking for, but we can help you enjoy the process of finding out.</p>
                         <a aria-controls="#supplemental" aria-expanded="false" id="expand-supplemental">Read more</a>
-                    </div>
-                </div>
+                    </div><!-- end div -->
+                </div><!-- end introduction -->
                 <div id="supplemental" aria-hidden="true" style="display: none;">
                     <h3>What information do the records contain?</h3>
                     <p>Some diaries record little more than daily losses and map references, while others are much more descriptive, with daily reports on operations, intelligence summaries and other material. The digitised diaries cover activity in France and Belgium.</p>
@@ -241,23 +236,10 @@
                     <h3>What do the records look like?</h3>
                     <p>With each download, you will typically see a unit diary that may cover a period ofseveral years. This may be divided into several PDF files, which you can save to your computer. You can then scroll through the PDF files to locate the battalion and dates that you are interested in.</p>
                     <p>Many of the war diaries were scribbled hastily in pencil and use obscure abbreviations, whilst some are the second carbon copy of the original, so they may be difficult to read.</p>
-                </div>
-            </div>
-        </div>
-    </main>
-    <!--
+                </div><!-- end supplemental -->
+            </div><!-- end details-breather -->
+        </div><!-- end col -->
+    </main><!-- end row -->
+</div><!-- end page-wrap -->
 
-                <h3 class="inline">Help with your research</h3>
-                <ul class="details-sidebar-list">
-                    <li>How to <a
-                            href="https://www.nationalarchives.gov.uk/help-with-your-research/discovery-help/"
-                            target="_blank">use this catalogue</a></li>
-                    <li>Need more context? View the catalogue description for <a
-                            href="https://discovery.nationalarchives.gov.uk/details/r/C14303">WO 95</a></li>
-                </ul>
-
-                -->
-
-</div>
-
-<?php require "footer.php"; ?>
+<?php require "includes/footer.php"; ?>

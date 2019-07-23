@@ -1,3 +1,23 @@
+$(document).ready(function(){
+    $("#feedback-widget-row").hide();
+    $(".tagForm").hide();
+    $("#suggest-a-correction-form").hide();
+    $("#sign-in-or-register").hide();
+
+    $("#show-tag-form").on( "click", function(e) {
+        e.preventDefault();
+        $(".tagForm").toggle();
+    });
+    $("#show-suggestion-form").on( "click", function(e) {
+        e.preventDefault();
+        $("#suggest-a-correction-form").toggle();
+    });
+    $("#show-feedback-form").on( "click", function(e) {
+        e.preventDefault();
+        $("#feedback-widget-row").toggle();
+    });
+});
+
 document.addEventListener('DOMContentLoaded', function() {
     // When the event DOMContentLoaded occurs, it is safe to access the DOM
 
@@ -19,3 +39,4 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     }
 });
+

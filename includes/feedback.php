@@ -1,6 +1,7 @@
-<aside id="feedback-widget-row" style="display:none;">
+<div id="feedback-widget-row">
     <div>
-        <div id="details-feedback-wrapper"><h2>Feedback</h2>
+        <div id="details-feedback-wrapper">
+            <h2>Feedback</h2>
             <div>
                 <form>
                     <fieldset class="initial-question">
@@ -9,7 +10,7 @@
                         <button type="button">Yes</button>
                     </fieldset>
                 </form>
-            </div>
-        </div>
-    </div>
-</aside>
+            </div><!-- end div -->
+        </div><!-- end details-feedback-wrapper -->
+    </div><!-- end div -->
+</div><!-- end feedback-widget-row -->

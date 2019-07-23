@@ -61,16 +61,15 @@
     <link rel="stylesheet" href="https://discovery.nationalarchives.gov.uk:443/Content/internet-explorer9.css">
     <![endif]-->
     <link href="./index_files/extensions.css" type="text/css" rel="stylesheet">
-    <script type="text/javascript" async="" src="./index_files/ec.js"></script>
-    <script type="text/javascript" async="" src="./index_files/analytics.js"></script>
-    <script async="" src="./index_files/gtm.js"></script>
+    <script type="text/javascript" async="" src="../index_files/ec.js"></script>
+    <script type="text/javascript" async="" src="../index_files/analytics.js"></script>
+    <script async="" src="../index_files/gtm.js"></script>
     <script src="./index_files/modernizr.min.js"></script>
     <!--[if (gte IE 6)&(lte IE 8)]>
     <script src="https://discovery.nationalarchives.gov.uk:443/Scripts/respond.min.js"></script>
     <![endif]-->
     <!-- Google Tag Manager -->
     <script src="./index_files/discoveryServerSideGTM.min.js"></script>
-    <script src="./index_files/extensions.js"></script>
     <script>
 (function (w, d, s, l, i) {
     w[l] = w[l] || [];

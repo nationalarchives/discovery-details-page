@@ -35,7 +35,7 @@
         <div class="row">
             <div class="col starts-at-full ends-at-one-quarter footer-col clr">
                 <div class="footer-left">
-                    <img src="./index_files/logo-white.png" srcset="https://discovery.nationalarchives.gov.uk:443/Content/Images/tna-square-white-logo.svg"  alt="The National Archives">
+                    <img src="./index_files/logo-white.png" srcset="https://discovery.nationalarchives.gov.uk:443/Content/Images/tna-square-white-logo.svg" alt="The National Archives">
                     <address>The National Archives<br>Kew, Richmond, Surrey,<br>TW9 4DU</address>
                 </div>
                 <div class="footer-left">
@@ -161,7 +161,7 @@
                             title="External website - opens in new window" target="_blank">CO 1069/386</a>)</p>
                     <p id="flickr-image"><a target="_blank" title="External website - opens in a new window"
                                             href="https://www.flickr.com/photos/nationalarchives/7643149896/"> <img
-                            src="./index_files/co-1069-386-1-yacht-basin-st-lucia.jpg" alt="Yacht Basin, St Lucia"></a>
+                                    src="./index_files/co-1069-386-1-yacht-basin-st-lucia.jpg" alt="Yacht Basin, St Lucia"></a>
                     </p>
                 </div>
             </div>
@@ -193,7 +193,7 @@
 <!-- Version: 8.6.2 -->
 <!-- Tag Builder Version: 3.0  -->
 <!-- Created: 8/4/2009 10:26:05 AM -->
-<script src="./index_files/webtrends.js"></script>
+<script src="../index_files/webtrends.js"></script>
 <!-- Warning: The two script blocks below must remain inline. Moving them to an external -->
 <!-- JavaScript include file can cause serious problems with cross-domain tracking.      -->
 <script>
@@ -242,6 +242,7 @@ _tag.dcsCollect();
 <script src="./index_files/angular.min.js"></script>
 <script src="./index_files/hammer.min.js"></script>
 <script src="./index_files/image-viewer.min.js"></script>
+<script src="./index_files/extensions.js"></script>
 <script>
 angular.module('imageViewerApp').config(function (constantsProvider) {
     constantsProvider.set({
