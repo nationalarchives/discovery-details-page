@@ -42,18 +42,21 @@ ul.call-to-action li {
     padding: 0.5em 1em;
     margin-right: 1em;
     margin-bottom: 1em;
-    background-color: #099;
+    background: #fff;
+    border: 2px solid #bda102;
 }
 ul.call-to-action li a {
-    color: #fff;
+    color: #333;
+    font-family: 'Bitter', sans-serif;
 }
 .container-action {
     padding: 0.5em;
-    border: 1px dotted #999;
+    background: #fce45c;
+    border: 1px dotted #333;
 }
 .container-details {
-    background-color: #e5e5e5;
-    border: 1px dotted #999;
+    border: 1px dotted #333;
+    border-top: 0;
     padding: 0.3em 0.2em;
     text-align: center;
     margin-top: -1px;
@@ -154,6 +157,12 @@ a #expand-supplemental {
 }
 #summary p {
     text-align: left;
+}
+.container-action p:first-child {
+    text-align: left;
+    font-size: 1.1em;
+    font-family: 'Bitter', sans-serif;
+    margin-bottom: 0;
 }
 .clickToggle {
     display: inline-block;
