@@ -16,6 +16,22 @@ $(document).ready(function(){
         e.preventDefault();
         $("#feedback-widget-row").toggle();
     });
+    $(".container-details").hide();
+
+    $("#first-call").on( "click", function(e) {
+        e.preventDefault();
+        $("#panel-1").slideToggle('fast');
+        $(this).parent().toggleClass('on');
+    });
+    $("#second-call").on( "click", function(e) {
+        e.preventDefault();
+        $("#panel-2").slideToggle('fast');
+        $(this).parent().toggleClass('on');
+    });
+    $("#third-call").on( "click", function(e) {
+        e.preventDefault();
+        $("#panel-3").slideToggle('fast');
+    });
 });
 
 document.addEventListener('DOMContentLoaded', function() {

@@ -43,28 +43,35 @@ ul.call-to-action li {
     margin-right: 1em;
     margin-bottom: 1em;
     background: #fff;
-    border: 2px solid #bda102;
 }
 ul.call-to-action li a {
     color: #333;
     font-family: 'Bitter', sans-serif;
 }
+li.on {
+    background: #fff !important;
+    border-bottom: 4px solid #099;
+}
+li.on a {
+}
 .container-action {
     padding: 0.5em;
-    background: #fce45c;
-    border: 1px dotted #333;
+    background: #ccc;
 }
 .container-details {
-    border: 1px dotted #333;
+    background: #383838;
     border-top: 0;
-    padding: 0.3em 0.2em;
-    text-align: center;
+    padding: 1em;
+    text-align: left;
     margin-top: -1px;
-    color: #222;
+    color: #e5e5e5;
     font-size: 0.85em;
 }
-.container-details p {
-    margin: 0;
+.container-details h2 {
+    color: #e5e5e5;
+}
+.container-details div p {
+    text-align: left !important;
 }
 .flexible {
     display: flex;
@@ -202,6 +209,10 @@ div.general-tag-list-item span.flagTag a {
 .details-row #hierarchy {
     padding: 0;
 }
+.container-details div {
+    background: transparent !important;
+    border-radius: 0 20px 0 20px;
+}
 
 @media only screen and (min-width:768px) {
     h1 {
@@ -236,7 +247,6 @@ div.general-tag-list-item span.flagTag a {
 
     .sticky .container-action {
         border: 0;
-        border-top: 1px dotted #999;
     }
 
     .sticky .container-action ul {
@@ -260,5 +270,11 @@ div.general-tag-list-item span.flagTag a {
             opacity: 0.9;
             transform: translateY(0);
         }
+    }
+    .container-details div {
+        display: inline-block;
+        margin: 0.7em !important;
+        background-color: rgba(255, 255, 255, 0.05) !important;
+        padding: 1.3em;
     }
 }
