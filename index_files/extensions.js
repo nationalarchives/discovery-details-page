@@ -31,6 +31,12 @@ $(document).ready(function(){
     $("#third-call").on( "click", function(e) {
         e.preventDefault();
         $("#panel-3").slideToggle('fast');
+        $(this).parent().toggleClass('on');
+    });
+    $("#fourth-call").on( "click", function(e) {
+        e.preventDefault();
+        $("#panel-4").slideToggle('fast');
+        $(this).parent().toggleClass('on');
     });
 });
 
