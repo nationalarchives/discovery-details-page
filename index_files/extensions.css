@@ -252,8 +252,7 @@ div.general-tag-list-item span.flagTag a {
     }
 
     .sticky h1 {
-        font-size: 1.2em;
-        margin: 0.7em;
+        display: none;
     }
 
     .sticky .container-action {
